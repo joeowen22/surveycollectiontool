@@ -3,10 +3,7 @@ package digital.and.bootcamp.surveycreator.service;
 import digital.and.bootcamp.surveycreator.models.Survey;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Service
 public class PersistenceService {
@@ -22,6 +19,6 @@ public class PersistenceService {
     }
 
     public List<Survey> getAllSurveys() {
-        return (List<Survey>) surveys.values();
+        return new ArrayList<>(surveys.values());
     }
 }
