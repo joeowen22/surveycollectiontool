@@ -14,7 +14,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry
-                        .addMapping("/*")
+                        .addMapping("/**")
                         .allowedOrigins("http://localhost:3000", "https://andsurvey.netlify.app/");
             }
         };
