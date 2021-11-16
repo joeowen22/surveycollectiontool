@@ -1,7 +1,7 @@
 # Read Me First
 The following was discovered as part of building this project:
 
-* The original package name 'digital.and.bootcamp.survery-creator' is invalid and this project uses 'digital.and.bootcamp.surverycreator' instead.
+* The original package name 'digital.and.bootcamp.survery-creator' is invalid and this project uses 'digital.and.bootcamp.surveycreator' instead.
 
 # Getting Started
 

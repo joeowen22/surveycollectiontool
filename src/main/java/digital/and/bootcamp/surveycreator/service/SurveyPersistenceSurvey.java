@@ -1,4 +1,4 @@
-package digital.and.bootcamp.surverycreator.service;
+package digital.and.bootcamp.surveycreator.service;
 
 import org.springframework.stereotype.Service;
 

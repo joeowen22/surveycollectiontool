@@ -1,13 +1,13 @@
-package digital.and.bootcamp.surverycreator;
+package digital.and.bootcamp.surveycreator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SurveryCreatorApplication {
+public class SurveyCreatorApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SurveryCreatorApplication.class, args);
+		SpringApplication.run(SurveyCreatorApplication.class, args);
 	}
 
 }

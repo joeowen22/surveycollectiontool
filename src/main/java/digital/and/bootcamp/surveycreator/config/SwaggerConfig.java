@@ -1,4 +1,4 @@
-package digital.and.bootcamp.surverycreator.config;
+package digital.and.bootcamp.surveycreator.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
