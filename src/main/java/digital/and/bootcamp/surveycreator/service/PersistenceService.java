@@ -13,9 +13,6 @@ import java.util.*;
 @Slf4j
 @Service
 public class PersistenceService {
-    @Autowired
-    RestTemplate restTemplate;
-
     private final Map<String, Survey> surveys = new HashMap<>();
 
     public String persistSurvey(Survey survey) {
@@ -24,6 +21,7 @@ public class PersistenceService {
     }
 
     public void sendToSlack(String surveyId, List<String> questions){
+        RestTemplate restTemplate = new RestTemplate();
         SurveySendRequest surveySendRequest = SurveySendRequest.builder()
                 .surveyId(surveyId)
                 .questions(questions)
