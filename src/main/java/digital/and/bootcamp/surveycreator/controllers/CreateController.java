@@ -25,6 +25,8 @@ public class CreateController {
 
     @PostMapping(path = "/create", consumes = "application/json")
     public String createSurvey(@RequestBody Survey survey) {
-        return persistenceService.persistSurvey(survey);
+        String surveyId = persistenceService.persistSurvey(survey);
+        persistenceService.sendToSlack(surveyId, survey.getQuestions());
+        return surveyId;
     }
 }
